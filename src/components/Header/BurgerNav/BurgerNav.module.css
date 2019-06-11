@@ -1,0 +1,13 @@
+.list {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.listItem {
+  padding: 10px 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}

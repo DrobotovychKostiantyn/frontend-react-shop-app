@@ -1,0 +1,27 @@
+.wrap {
+  min-height: 80vh;
+}
+
+.title {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #171718;
+}
+
+.title:after {
+  content: '';
+  display: block;
+  width: 60%;
+  border-bottom: 1px solid #f3f3f3;
+  margin: 10px auto 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    min-height: 90vh;
+  }
+  .title {
+    margin-bottom: 100px;
+  }
+}

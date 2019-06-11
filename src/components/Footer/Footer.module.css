@@ -1,0 +1,13 @@
+.footer {
+  border-top: 1px solid #9e9e9e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.rules {
+  font-size: 13px;
+  line-height: 15px;
+  color: #9e9e9e;
+}

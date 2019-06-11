@@ -1,0 +1,17 @@
+.wrap {
+  min-height: 80vh;
+}
+
+.carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+/* 
+.k {
+  height: 500px;
+} */
+
+.img {
+  height: 70vh;
+}

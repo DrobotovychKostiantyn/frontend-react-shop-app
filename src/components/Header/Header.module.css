@@ -1,0 +1,110 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 10px;
+  width: 100%;
+  color: #484849;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+}
+/* 
+.leftPiece {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.tabletDesctop {
+  display: none;
+}
+
+.mobile {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerBtn {
+  width: 35px;
+  /* height: 30px; */
+  position: fixed;
+  left: 25px;
+  top: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerBtn:focus {
+  outline: none;
+}
+
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 3px auto;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+
+.burgerLineTop {
+  transform: rotate(45deg);
+  position: relative;
+  top: 6px;
+}
+
+.burgerLineMiddle {
+  opacity: 0;
+}
+
+.burgerLineBottom {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 6px;
+}
+
+.burgerArrowBtn {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tabletDesctop {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftSide {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+}

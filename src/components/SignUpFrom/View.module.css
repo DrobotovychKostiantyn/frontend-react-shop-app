@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  color: #171718;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* .form:after {
+  content: '';
+  display: block;
+  width: 60%;
+  border-bottom: 1px solid #f3f3f3;
+  margin: 40px auto 0;
+} */
+
+.name,
+.email,
+.pass {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.lastPass {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.nameInp,
+.emailInp,
+.passInp {
+  border: 3px solid #f3f3f3;
+  height: 50px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.nameInp:focus,
+.emailInp:focus,
+.passInp:focus {
+  outline: none;
+  border: 3px solid #2b32b2;
+}
+
+.btn {
+  border: none;
+  background-color: #2b32b2;
+  color: #fff;
+  width: 260px;
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+@media screen and (min-width: 375px) {
+  .btn {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
