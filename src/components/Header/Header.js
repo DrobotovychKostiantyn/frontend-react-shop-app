@@ -1,8 +1,6 @@
 import React, { Component, createRef } from 'react';
 // import { NavLink } from 'react-router-dom';
 
-import { ReactComponent as Arrow } from '../../assets/arrow.svg';
-
 import Logo from './Logo/Logo';
 import Nav from './Nav/Navigation';
 import BurgerNav from './BurgerNav/BurgerNav';
@@ -32,29 +30,22 @@ class Header extends Component {
 
   render() {
     const { isBurgerOpen } = this.state;
-    const { isBurgerAndFooter, handleClickBtnBack } = this.props;
     return (
       <div className={s.wrap} ref={this.backdropRef}>
         <div className={s.mobile}>
-          {isBurgerAndFooter ? (
-            <Button handleClick={this.handleOpenBurger} style={s.burgerBtn}>
-              <div
-                className={`${s.burgerLine} ${isBurgerOpen && s.burgerLineTop}`}
-              />
-              <div
-                className={`${s.burgerLine} ${isBurgerOpen &&
-                  s.burgerLineMiddle}`}
-              />
-              <div
-                className={`${s.burgerLine} ${isBurgerOpen &&
-                  s.burgerLineBottom}`}
-              />
-            </Button>
-          ) : (
-            <Button handleClick={handleClickBtnBack} style={s.burgerArrowBtn}>
-              <Arrow className={s.icon} />
-            </Button>
-          )}
+          <Button handleClick={this.handleOpenBurger} style={s.burgerBtn}>
+            <div
+              className={`${s.burgerLine} ${isBurgerOpen && s.burgerLineTop}`}
+            />
+            <div
+              className={`${s.burgerLine} ${isBurgerOpen &&
+                s.burgerLineMiddle}`}
+            />
+            <div
+              className={`${s.burgerLine} ${isBurgerOpen &&
+                s.burgerLineBottom}`}
+            />
+          </Button>
 
           <Logo />
 

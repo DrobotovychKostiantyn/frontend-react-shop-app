@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from '../../components/Menu/MenuContainer';
 
-import s from './Dishes.module.css';
+import s from './Women.module.css';
 
-const Dishes = () => (
+const Women = () => (
   <div className={s.wrap}>
     <Menu />
   </div>
 );
 
-export default Dishes;
+export default Women;

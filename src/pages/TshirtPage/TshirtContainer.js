@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import * as Api from '../../services/api';
 
-import s from './DishContainer.module.css';
+import s from './TshirtContainer.module.css';
 
 import View from './View';
 
-class Dish extends Component {
+class Tshirt extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,10 +16,6 @@ class Dish extends Component {
   }
 
   componentDidMount() {
-    const { handleChangeBurgerBtn } = this.props;
-
-    handleChangeBurgerBtn();
-
     const {
       match: { params },
       // location: { state },
@@ -30,12 +26,6 @@ class Dish extends Component {
     Api.getDishById(params.id).then(({ data }) =>
       this.setState({ dish: data }),
     );
-  }
-
-  componentWillUnmount() {
-    const { handleChangeBurgerBtn } = this.props;
-
-    handleChangeBurgerBtn();
   }
 
   handleBtnBack = () => {
@@ -49,7 +39,7 @@ class Dish extends Component {
       return;
     }
 
-    history.push('/dishes');
+    history.push('/man');
   };
 
   handleChangeQuantitySelect = selectedQuantityOption =>
@@ -76,4 +66,4 @@ class Dish extends Component {
   }
 }
 
-export default Dish;
+export default Tshirt;

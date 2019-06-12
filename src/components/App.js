@@ -5,8 +5,8 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
 import Home from '../pages/HomePage/Home';
-import Dishes from '../pages/DishesPage/Dishes';
-import Dish from '../pages/DishPage/DishContainer';
+import Dishes from '../pages/WomenPage/Women';
+import Tshirt from '../pages/TshirtPage/TshirtContainer';
 import About from '../pages/AboutPage/About';
 import Delivery from '../pages/DeliveryPage/Delivery';
 import Cart from '../pages/CartPage/Cart';
@@ -16,54 +16,29 @@ import Login from '../pages/LoginPage/Login';
 import s from './App.module.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isBurgerAndFooter: true,
-      // pageState: null,
-    };
-  }
-
-  handleClickBtnBack = () => {
-    // const { pageState } = this.state;
-    const { history } = this.props;
-    // if (pageState) {
-    history.push('/dishes');
-    // }
-    // this.handleChangeBurgerBtn();
-  };
-
-  // getPageState = state => {
-  //   this.setState({ pageState: state });
-  // };
-
-  handleChangeBurgerBtn = () => {
-    this.setState(prev => ({ isBurgerAndFooter: !prev.isBurgerAndFooter }));
-  };
+  handleClickBtnBack = () => null;
 
   render() {
-    const { isBurgerAndFooter } = this.state;
     return (
       <div className={s.wrap}>
-        <Header
-          isBurgerAndFooter={isBurgerAndFooter}
-          handleClickBtnBack={this.handleClickBtnBack}
-        />
+        <Header handleClickBtnBack={this.handleClickBtnBack} />
         <main className={s.main}>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route
-              path="/dishes/:id"
+              path="/women/:id"
               render={props => (
-                <Dish
-                  {...props}
-                  handleChangeBurgerBtn={this.handleChangeBurgerBtn}
-                  getPageState={this.getPageState}
-                />
+                <Tshirt {...props} getPageState={this.getPageState} />
               )}
             />
-            <Route path="/dishes" render={props => <Dishes {...props} />} />
+            <Route
+              path="/man/:id"
+              render={props => (
+                <Tshirt {...props} getPageState={this.getPageState} />
+              )}
+            />
+            <Route path="/women" render={props => <Dishes {...props} />} />
+            <Route path="/man" render={props => <Dishes {...props} />} />
             <Route path="/about" component={About} />
             <Route path="/delivery" component={Delivery} />
             <Route path="/cart" component={Cart} />
@@ -72,7 +47,7 @@ class App extends Component {
             <Redirect to="/" />
           </Switch>
         </main>
-        {isBurgerAndFooter && <Footer />}
+        <Footer />
       </div>
     );
   }

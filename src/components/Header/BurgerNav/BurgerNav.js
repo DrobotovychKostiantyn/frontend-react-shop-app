@@ -4,13 +4,13 @@ import { NavLink } from 'react-router-dom';
 import s from './BurgerNav.module.css';
 
 const navList = [
-  { menu: 'Home', path: '' },
-  { menu: 'Dishes', path: 'dishes' },
-  { menu: 'About', path: 'about' },
-  { menu: 'Delivery', path: 'delivery' },
-  { menu: 'Login', path: 'login' },
-  { menu: 'Sign Up', path: 'register' },
-  { menu: 'Sign Out', path: '' },
+  { name: 'Home', path: '' },
+  { name: 'Man', path: 'man' },
+  { name: 'Women', path: 'women' },
+  { name: 'About', path: 'about' },
+  { name: 'Login', path: 'login' },
+  { name: 'Sign Up', path: 'register' },
+  { name: 'Sign Out', path: '' },
 ];
 
 class BurgerNav extends Component {
@@ -47,14 +47,14 @@ class BurgerNav extends Component {
     return (
       <nav>
         <ul className={s.list}>
-          {navList.map(({ menu, path }) => (
-            <li key={menu} className={s.listItem}>
+          {navList.map(({ name, path }) => (
+            <li key={name} className={s.listItem}>
               <NavLink
                 to={`/${path}`}
                 className={s.link}
                 onClick={handleCloseBurger}
               >
-                {menu}
+                {name}
               </NavLink>
             </li>
           ))}

@@ -94,17 +94,18 @@
   }
 
   .tabletDesctop {
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .leftSide {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   .logo {
-    margin-right: 20px;
+    margin: 0 0 0 0;
   }
 }
