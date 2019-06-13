@@ -3,3 +3,11 @@
   height: 40px;
   border-radius: 10px;
 }
+
+.link {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
