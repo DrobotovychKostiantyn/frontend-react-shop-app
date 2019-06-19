@@ -10,11 +10,10 @@ import Delivery from '../pages/DeliveryPage/Delivery';
 import Cart from '../pages/CartPage/Cart';
 import SignUp from '../pages/SignUpPage/SignUp';
 import Login from '../pages/LoginPage/Login';
+import Man from '../pages/ManPage/Man';
+import Women from '../pages/WomenPage/Women';
 
 import s from './App.module.css';
-
-const Man = () => <h2>man</h2>;
-const Women = () => <h2>woman</h2>;
 
 class App extends Component {
   handleClickBtnBack = () => null;
