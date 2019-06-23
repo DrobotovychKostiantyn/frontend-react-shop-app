@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchManProducts } from '../../modules/operations';
+
+import ManProducts from '../../components/containers/ManProductsContainer';
 
 import s from './Man.module.css';
 
-const Man = () => (
-  <div className={s.wrap}>
-    <h2>Man Page!</h2>
-  </div>
-);
+class Man extends Component {
+  state = {};
 
-export default Man;
+  componentDidMount() {
+    const { fetchManProductsList } = this.props;
+
+    fetchManProductsList();
+  }
+
+  render() {
+    return (
+      <div className={s.wrap}>
+        <ManProducts />
+      </div>
+    );
+  }
+}
+
+const mapDispatchToProps = dispatch => ({
+  fetchManProductsList: () => dispatch(fetchManProducts()),
+});
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(Man);

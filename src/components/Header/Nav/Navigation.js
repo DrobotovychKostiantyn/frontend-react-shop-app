@@ -7,7 +7,7 @@ const navList = [
   { name: 'Home', path: '' },
   { name: 'Man', path: 'man' },
   { name: 'Women', path: 'women' },
-  { name: 'About', path: 'about' },
+  { name: 'Accessories', path: 'accessories' },
 ];
 
 const Nav = () => (
