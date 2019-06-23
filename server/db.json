@@ -13,7 +13,6 @@
       "id": 2,
       "name": "Man's T-shirt",
       "image": "https://images.ua.prom.st/370749649_w640_h640_futbolka-muzhskaya-seraya.jpg",
-      "image": "https://s2.eda.ru/StaticContent/Photos/150601195903/151007183344/p_O.jpg",
       "price": 150,
       "category": "man",
       "colors": ["white", "blue", "red"]
@@ -70,6 +69,51 @@
       "image": "https://images.ua.prom.st/370749649_w640_h640_futbolka-muzhskaya-seraya.jpg",
       "price": 240,
       "category": "man",
+      "colors": ["white", "blue", "red"]
+    },
+    {
+      "id": 9,
+      "name": "Women's T-shirt",
+      "material": "хлопок, 100%",
+      "image": "https://www.hawesandcurtis.co.uk/images/products/womens-rose-pink-fitted-cotton-stretch-shirt-single-cuff-FIPMA002-J50-02-800px-1040px.jpg",
+      "price": 240,
+      "category": "women",
+      "colors": ["white", "blue", "red"]
+    },
+    {
+      "id": 10,
+      "name": "Women's T-shirt",
+      "material": "хлопок, 100%",
+      "image": "https://www.hawesandcurtis.co.uk/images/products/womens-rose-pink-fitted-cotton-stretch-shirt-single-cuff-FIPMA002-J50-02-800px-1040px.jpg",
+      "price": 240,
+      "category": "women",
+      "colors": ["white", "blue", "red"]
+    },
+    {
+      "id": 11,
+      "name": "Women's T-shirt",
+      "material": "хлопок, 100%",
+      "image": "https://www.hawesandcurtis.co.uk/images/products/womens-rose-pink-fitted-cotton-stretch-shirt-single-cuff-FIPMA002-J50-02-800px-1040px.jpg",
+      "price": 240,
+      "category": "women",
+      "colors": ["white", "blue", "red"]
+    },
+    {
+      "id": 12,
+      "name": "Women's T-shirt",
+      "material": "хлопок, 100%",
+      "image": "https://www.hawesandcurtis.co.uk/images/products/womens-rose-pink-fitted-cotton-stretch-shirt-single-cuff-FIPMA002-J50-02-800px-1040px.jpg",
+      "price": 240,
+      "category": "women",
+      "colors": ["white", "blue", "red"]
+    },
+    {
+      "id": 13,
+      "name": "Women's T-shirt",
+      "material": "хлопок, 100%",
+      "image": "https://www.hawesandcurtis.co.uk/images/products/womens-rose-pink-fitted-cotton-stretch-shirt-single-cuff-FIPMA002-J50-02-800px-1040px.jpg",
+      "price": 240,
+      "category": "women",
       "colors": ["white", "blue", "red"]
     }
   ]

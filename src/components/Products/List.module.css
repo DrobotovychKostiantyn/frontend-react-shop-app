@@ -1,0 +1,154 @@
+.wrap {
+}
+
+.item {
+  width: 300px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid red; */
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 22px;
+  margin: 0 0 5px 0;
+}
+
+.price {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid silver;
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media (min-width: 245px) {
+  .wrap {
+  }
+  .item {
+    width: 400px;
+    /* margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid red; */
+  }
+
+  /* .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img:hover {
+    transform: scale(1.2);
+  }
+
+  .name {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+  }
+
+  .price {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+  }
+
+  .button {
+    background-color: #fff;
+    border: 1px solid silver;
+    width: 160px;
+    height: 40px;
+    font-size: 22px;
+  } */
+}
+
+@media (min-width: 600px) {
+  .wrap {
+  }
+  .item {
+    width: 560px;
+    /* margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid red; */
+  }
+
+  /* .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img:hover {
+    transform: scale(1.2);
+  }
+
+  .name {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+  }
+
+  .price {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+  }
+
+  .button {
+    background-color: #fff;
+    border: 1px solid silver;
+    width: 160px;
+    height: 40px;
+    font-size: 22px;
+  } */
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item {
+    width: 380px;
+    margin: 0 auto 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .item {
+    width: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .item {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .wrap {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .item {
+    width: 360px;
+  }
+}
