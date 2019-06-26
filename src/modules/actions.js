@@ -57,3 +57,23 @@ export const fetchWomenProductsError = error => ({
     error,
   },
 });
+
+// for accessories
+
+export const fetchAccessoriesProductsRequest = () => ({
+  type: actionTypes.FETCH_ACCESSORIES_PRODUCTS_REQUEST,
+});
+
+export const fetchAccessoriesProductsSuccess = data => ({
+  type: actionTypes.FETCH_ACCESSORIES_PRODUCTS_SUCCESS,
+  payload: {
+    data,
+  },
+});
+
+export const fetchAccessoriesProductsError = error => ({
+  type: actionTypes.FETCH_ACCESSORIES_PRODUCTS_ERROR,
+  payload: {
+    error,
+  },
+});

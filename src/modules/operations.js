@@ -46,3 +46,19 @@ export const fetchWomenProducts = () => async dispatch => {
     dispatch(actions.fetchWomenProductsError(error));
   }
 };
+
+// for accessories
+
+export const fetchAccessoriesProducts = () => async dispatch => {
+  dispatch(actions.fetchAccessoriesProductsRequest());
+
+  try {
+    const response = await axios.get(
+      'http://localhost:3001/products?category=accessories',
+    );
+    dispatch(actions.fetchAccessoriesProductsSuccess(response.data));
+    // console.log(response);
+  } catch (error) {
+    dispatch(actions.fetchAccessoriesProductsError(error));
+  }
+};

@@ -6,7 +6,9 @@ const Products = ({ list }) => (
   <ul className={s.wrap}>
     {list.map(product => (
       <li key={product.id} className={s.item}>
-        <img src={product.image} alt={product.name} className={s.img} />
+        <div className={s.imageWrap}>
+          <img src={product.image} alt={product.name} className={s.img} />
+        </div>
         <h3 className={s.name}>{product.name}</h3>
         <p className={s.price}>{product.price} $</p>
         <button type="button" className={s.button} onClick={() => null}>
