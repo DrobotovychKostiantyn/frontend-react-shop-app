@@ -2,7 +2,7 @@ import React from 'react';
 
 import s from './Login.module.css';
 
-import Form from '../../components/LoginForm/LoginFromContainer';
+import Form from '../../components/LoginForm/View';
 
 const Login = () => (
   <div className={s.wrap}>

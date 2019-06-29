@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Form from '../../components/SignUpFrom/SignUpFormContainer';
+import Form from '../../components/SignUpFrom/View';
 
 import s from './SignUp.module.css';
 
